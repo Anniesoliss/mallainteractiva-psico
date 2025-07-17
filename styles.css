@@ -1,52 +1,43 @@
- /* 🎨 Colores por área temática */
-    .curso-humanidades { background-color: #FFE6CD; }
-    .curso-introductoria { background-color: #b9e0dd; }
-    .curso-investigacion { background-color: #b9c9d8; }
-    .curso-servicio { background-color: #e5eff0; }
-    .curso-psicobiologia { background-color: #cbdd9f; }
-    .curso-educativa-desarrollo { background-color: #f3acb2; }
-    .curso-social { background-color: #dbb8d6; }
-    .curso-clinica-salud { background-color: #fce6ac; }
-    .curso-optativo { background-color: #fefefe; } 
-    .curso-graduacion { background-color: #f3e5f5; } 
-
+/* 🎨 Colores por área temática */
+.curso-humanidades { background-color: #FFE6CD; }
+.curso-introductoria { background-color: #b9e0dd; }
+.curso-investigacion { background-color: #b9c9d8; }
+.curso-servicio { background-color: #e5eff0; }
+.curso-psicobiologia { background-color: #cbdd9f; }
+.curso-educativa-desarrollo { background-color: #f3acb2; }
+.curso-social { background-color: #dbb8d6; }
+.curso-clinica-salud { background-color: #fce6ac; }
+.curso-optativo { background-color: #fefefe; } 
+.curso-graduacion { background-color: #f3e5f5; } 
 
 .curso {
   cursor: pointer;
   padding: 8px;
   margin: 5px 0;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  user-select: none;
+  /* elimina cualquier fondo blanco aquí para no tapar los colores */
+  background-color: transparent; 
+}
+
+/* Estilo para cursos completados: 
+   mantenemos el color original pero agregamos una línea tachada y un poco de transparencia */
+.curso.completado {
+  text-decoration: line-through;
+  opacity: 0.7;
+  /* no cambiar el fondo para que se vea el color original */
+}
+
+/* Cursos bloqueados */
+.curso.bloqueado {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
   user-select: none;
 }
 
-.curso.completado {
-  text-decoration: line-through;
-  background-color: #d1ffd1;
-}
-
-}
-
-#barra-progreso {
-  width: 100%;
-  background-color: #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 20px;
-  margin-top: 15px;
-}
-
-#barra-progreso .avance {
-  height: 100%;
-  width: 0%;
-  background-color: #4caf50;
-  transition: width 0.5s ease;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  line-height: 20px;
-}
+/* Barra de progreso */
 #barra-progreso-container {
   margin: 2rem auto;
   padding: 1rem;
@@ -69,20 +60,4 @@
   color: white;
   line-height: 24px;
   transition: width 0.3s ease;
-}
-
-.curso.completado {
-  text-decoration: line-through;
-  background-color: #d1ffd1;
-
-}
-.curso {
-  cursor: pointer; /* para que se note que es clickeable */
-}
-
-.curso.bloqueado {
-  opacity: 0.4;
-  pointer-events: none;
-  cursor: not-allowed;
-  user-select: none;
 }
