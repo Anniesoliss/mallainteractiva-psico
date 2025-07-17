@@ -8,6 +8,8 @@
     .curso-social { background-color: #dbb8d6; }
     .curso-clinica-salud { background-color: #fce6ac; }
     .curso-optativo { background-color: #fefefe; } 
+    .curso-graduacion { background-color: #f3e5f5; } 
+
 
 .curso {
   cursor: pointer;
