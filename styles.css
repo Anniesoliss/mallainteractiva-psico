@@ -42,14 +42,6 @@ h1 {
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
-.curso {
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  width: calc(33.33% - 1rem);
-  min-width: 250px;
-  font-size: 0.9rem;
-}
 
 .curso strong {
   display: block;
@@ -79,7 +71,15 @@ h1 {
   /* elimina cualquier fondo blanco aquí para no tapar los colores */
   background-color: transparent; 
 }
-    }
+    .curso {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 1rem);
+  min-width: 250px;
+  font-size: 0.9rem;
+}
+
 
 /* Estilo para cursos completados: 
    mantenemos el color original pero agregamos una línea tachada y un poco de transparencia */
