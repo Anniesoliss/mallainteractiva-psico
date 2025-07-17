@@ -78,3 +78,9 @@
 .curso {
   cursor: pointer; /* para que se note que es clickeable */
 }
+
+.curso.bloqueado {
+  cursor: not-allowed;
+  /* Opcionalmente: */
+  background-color: #eee;
+}
