@@ -73,4 +73,8 @@
 .curso.completado {
   text-decoration: line-through;
   opacity: 0.6;
+  cursor: pointer;
+}
+.curso {
+  cursor: pointer; /* para que se note que es clickeable */
 }
