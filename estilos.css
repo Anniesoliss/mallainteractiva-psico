@@ -44,3 +44,26 @@
   font-weight: bold;
   line-height: 20px;
 }
+#barra-progreso-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+#barra-progreso {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 24px;
+  width: 100%;
+}
+
+#barra-progreso .avance {
+  background-color: #4caf50;
+  height: 100%;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  transition: width 0.3s ease;
+}
