@@ -69,3 +69,8 @@
   line-height: 24px;
   transition: width 0.3s ease;
 }
+
+.curso.completado {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
