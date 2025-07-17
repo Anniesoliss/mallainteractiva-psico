@@ -1,3 +1,4 @@
+console.log("script.js cargado y funcionando");
 document.addEventListener("DOMContentLoaded", () => {
   const cursos = document.querySelectorAll('.curso');
   const barraAvance = document.querySelector('#barra-progreso .avance');
