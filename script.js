@@ -77,3 +77,26 @@ document.addEventListener("DOMContentLoaded", () => {
   actualizarBloqueos();
   actualizarProgreso();
 });
+function validarRequisitos() {
+  const cursos = document.querySelectorAll('.curso');
+  cursos.forEach(curso => {
+    const requisitos = curso.dataset.requisitos;
+    if (requisitos) {
+      const listaReq = requisitos.split(',').map(r => r.trim());
+      console.log(`Curso ${curso.dataset.codigo} requiere:`, listaReq);
+      const requisitosCumplidos = listaReq.every(codigoReq => {
+        const cursoReq = document.querySelector(`.curso[data-codigo="${codigoReq}"]`);
+        if (!cursoReq) {
+          console.warn(`Requisito ${codigoReq} no encontrado en la malla.`);
+          return false;
+        }
+        return cursoReq.classList.contains('completado');
+      });
+      if (requisitosCumplidos) {
+        curso.classList.remove('bloqueado');
+      } else {
+        curso.classList.add('bloqueado');
+      }
+    }
+  });
+}
