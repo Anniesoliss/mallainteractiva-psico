@@ -117,3 +117,7 @@ h1 {
   line-height: 24px;
   transition: width 0.3s ease;
 }
+[class*="curso-"] {
+  color: black; /* o el color de texto que quieras */
+}
+
