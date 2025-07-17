@@ -81,7 +81,8 @@
 }
 
 .curso.bloqueado {
+  opacity: 0.4;
+  pointer-events: none;
   cursor: not-allowed;
-  /* Opcionalmente: */
-  background-color: #eee;
+  user-select: none;
 }
