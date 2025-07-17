@@ -30,18 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
-  const cursos = document.querySelectorAll('.curso');
+  // Agregar event listener a cada curso
   cursos.forEach(curso => {
     curso.addEventListener('click', () => {
       curso.classList.toggle('completado');
+      actualizarProgreso();
+      guardarProgreso();
     });
   });
-});
-
-
-  cargarProgreso();
-});
 
   cargarProgreso();
 });
