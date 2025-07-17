@@ -63,22 +63,18 @@ h1 {
 
 .curso {
   cursor: pointer;
-  padding: 8px;
-  margin: 5px 0;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
-  user-select: none;
-  /* elimina cualquier fondo blanco aquí para no tapar los colores */
-  background-color: transparent; 
-}
-    .curso {
   padding: 1rem;
+  margin: 5px 0;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: calc(33.33% - 1rem);
   min-width: 250px;
   font-size: 0.9rem;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  user-select: none;
+  background-color: transparent; /* Permite mostrar el color temático */
 }
+
 
 
 /* Estilo para cursos completados: 
