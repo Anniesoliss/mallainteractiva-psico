@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Curricular - Bach. y lic. Psicología - UCR</title>
+  <title>Malla Curricular - Psicología</title>
   <style>
     body {
       font-family: sans-serif;
-      background-color: #fffbf0;
+      background-color: #F9F8EF;
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
@@ -23,17 +23,31 @@
     }
 
     .titulo-ano {
-      background-color: #003366;
-      color: white;
+      background-color: #F7CEB1;
+      color: black;
       padding: 0.5rem;
       border-radius: 5px;
+      font-size: 1.2rem;
+    }
+
+    .semestre {
+      margin-top: 1.5rem;
+    }
+
+    .titulo-semestre {
+      background-color: #C9E4E1;
+      color: black;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
     }
 
     .cursos {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-top: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .curso {
@@ -42,14 +56,23 @@
       border-radius: 10px;
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
       width: calc(33.33% - 1rem);
-      min-width: 200px;
+      min-width: 250px;
+      font-size: 0.9rem;
     }
 
     .curso strong {
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
       color: #003366;
     }
+
+    /* 🎨 Colores por área temática */
+    .curso-humanidades { background-color: #FFE6CD; }
+    .curso-introductoria { background-color: #b9e0dd; }
+    .curso-investigacion { background-color: #b9c9d8; }
+    .curso-servicio { background-color: #e5eff0; }
+    .curso-psicobiologia { background-color: #cbdd9f; }
+
   </style>
 </head>
 <body>
@@ -57,39 +80,108 @@
   <h1>Malla Curricular - Psicología</h1>
 
   <div class="ano">
-    <div class="titulo-ano">Primer Año</div>
-    <div class="cursos">
-      <div class="curso">
-        <strong>Introducción a la Psicología</strong>
-        Código: PSI-101
+    <div class="titulo-ano">I Año (Bachillerato)</div>
+
+    <!-- Primer Ciclo -->
+    <div class="semestre">
+      <div class="titulo-semestre">I Ciclo (18 créditos)</div>
+      <div class="cursos">
+
+        <div class="curso curso-introductoria">
+          <strong>PS-0132 Historia de la Psicología</strong>
+          Créditos: 2<br>
+          Requisitos: ninguno<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-introductoria">
+          <strong>PS-1072 Teorías y Sistemas de la Psicología I</strong>
+          Créditos: 4<br>
+          Requisitos: ninguno<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-servicio">
+          <strong>CP-0403 Política Económica</strong>
+          Créditos: 3<br>
+          Requisitos: ninguno<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-servicio">
+          <strong>SO-2439 Introducción a la Sociología para Psicología</strong>
+          Créditos: 3<br>
+          Requisitos: ninguno<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-humanidades">
+          <strong>EF- Actividad Deportiva</strong>
+          Créditos: 0<br>
+          Requisitos: ninguno<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-humanidades">
+          <strong>EG- Curso Integrado de Humanidades I</strong>
+          Créditos: 6<br>
+          Requisitos: ninguno<br>
+          Correquisitos: ninguno
+        </div>
+
       </div>
-      <div class="curso">
-        <strong>Psicología del Desarrollo</strong>
-        Código: PSI-102
-      </div>
-      <div class="curso">
-        <strong>Metodología de la Investigación I</strong>
-        Código: PSI-103
+    </div>
+
+    <!-- Segundo Ciclo -->
+    <div class="semestre">
+      <div class="titulo-semestre">II Ciclo (19 créditos)</div>
+      <div class="cursos">
+
+        <div class="curso curso-humanidades">
+          <strong>EG- Curso Integrado de Humanidades II</strong>
+          Créditos: 6<br>
+          Requisitos: EG-1<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-humanidades">
+          <strong>EG- Curso de Arte</strong>
+          Créditos: 2<br>
+          Requisitos: ninguno<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-servicio">
+          <strong>AT- Teoría de la Cultura para Psicología</strong>
+          Créditos: 3<br>
+          Requisitos: ninguno<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-introductoria">
+          <strong>PS-1073 Teorías y Sistemas de la Psicología II</strong>
+          Créditos: 4<br>
+          Requisitos: PS-1072<br>
+          Correquisitos: PS-0041
+        </div>
+
+        <div class="curso curso-psicobiologia">
+          <strong>PS-1017 Procesos Psicológicos Básicos</strong>
+          Créditos: 2<br>
+          Requisitos: PS-1072<br>
+          Correquisitos: ninguno
+        </div>
+
+        <div class="curso curso-investigacion">
+          <strong>PS-0041 Investigación I</strong>
+          Créditos: 2<br>
+          Requisitos: ninguno<br>
+          Correquisitos: PS-1073
+        </div>
+
       </div>
     </div>
   </div>
-
-  <div class="ano">
-    <div class="titulo-ano">Segundo Año</div>
-    <div class="cursos">
-      <div class="curso">
-        <strong>Psicología Cognitiva</strong>
-        Código: PSI-201
-      </div>
-      <div class="curso">
-        <strong>Psicología Social</strong>
-        Código: PSI-202
-      </div>
-    </div>
-  </div>
-
-  <!-- Agrega más años y cursos aquí -->
 
 </body>
 </html>
-
